@@ -1,0 +1,13 @@
+.cards {
+  display: flex;
+  margin: 40px 0 171px;
+  font-family: "CabinetGrotesk-Bold", Arial, sans-serif;
+}
+
+.cards__text {
+  width: 330px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.24;
+  margin: 0 0 34px;
+}
