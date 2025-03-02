@@ -1,5 +1,4 @@
 .cards {
-  display: flex;
   margin: 40px 0 171px;
   font-family: "CabinetGrotesk-Bold", Arial, sans-serif;
 }
@@ -10,4 +9,13 @@
   font-size: 18px;
   line-height: 1.24;
   margin: 0 0 34px;
+}
+
+.cards__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  gap: 21px;
 }

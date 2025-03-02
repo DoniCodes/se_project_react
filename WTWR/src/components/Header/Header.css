@@ -17,7 +17,6 @@
   font-weight: 700;
   line-height: 1.2;
   width: 160px;
-  height: 24px;
 }
 
 .header__add-clothes-btn {
@@ -26,7 +25,6 @@
   font-weight: 700;
   line-height: 1.2;
   width: 116px;
-
   padding: 0;
   border: none;
 }
@@ -47,7 +45,6 @@
   font-weight: 700;
   line-height: 1.2;
   width: 157px;
-
   text-align: center;
 }
 
