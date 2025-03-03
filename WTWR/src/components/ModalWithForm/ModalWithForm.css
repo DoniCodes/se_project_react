@@ -1,0 +1,152 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #0000004d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "CabinetGrotesk-Bold", Arial, sans-serif;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 0.6s, opacity 0.5s linear;
+}
+
+.modal_opened {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.modal__content {
+  background-color: #fff;
+  padding: 28px 28px 36px;
+  position: relative;
+  max-width: 496px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.modal__title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  margin: 0 auto 24px 0;
+}
+
+.modal__close {
+  position: absolute;
+  top: 20px;
+  right: 28px;
+  background-image: url("../../assets/close-btn.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 16px;
+  height: 16px;
+  color: #0000004d;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.modal__label {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  margin: 0 0 24px;
+}
+
+.modal__label_type_radio {
+  display: flex;
+  align-items: center;
+  margin: 0 0 8px;
+  cursor: pointer;
+  width: 40%;
+}
+
+.modal__label_type_text {
+  padding: 2px;
+  margin: 0 0 0 8px;
+}
+
+.modal__input {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  line-height: 1.25;
+  margin: 8px 0 0px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #000000;
+}
+
+.modal__radio-buttons {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  border: none;
+  width: 185px;
+}
+
+.modal__radio-input {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  position: relative;
+  bottom: 1px;
+  cursor: pointer;
+
+  appearance: none;
+  border-radius: 50%;
+  background: #fff;
+  border: 3px solid #fff;
+
+  /* The outline will be the outer circle */
+  outline: 2px solid #00000080;
+  transition: 0.3s all ease;
+}
+
+.modal__radio-input:checked {
+  background: #000;
+  outline: 2px solid #000;
+  /* accent-color: #000; */
+}
+
+.modal__legend {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  margin: 0 0 12px;
+}
+
+.modal__submit {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  margin: 32px auto 0 0;
+  padding: 8px 16px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.modal__submit_disabled {
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+.modal__submit:hover {
+  background-color: #0000004d;
+  cursor: pointer;
+}
