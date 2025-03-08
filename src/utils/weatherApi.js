@@ -8,7 +8,7 @@ function _checkResponse(res) {
 export function filterWeatherData(data) {
   const result = {};
   result.city = data.name;
-  result.type = getWeatherType(data.main.temp.F);
+  result.type = getWeatherType(data.main.temp);
   result.temp = {
     F: data.main.temp,
     /* C: Math.round((data.main.temp - 32) * (5 / 9)), */
