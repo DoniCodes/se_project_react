@@ -19,7 +19,7 @@ function Header({ handleAddClick, weatherData }) {
         </button>
         <p className="header__username">Terrence Tegegne</p>
       </div>
-      <img src={avatar} alt="" className="header__avatar" />
+      <img src={avatar} alt="Profile Avatar" className="header__avatar" />
     </header>
   );
 }
