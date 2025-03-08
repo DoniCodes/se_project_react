@@ -37,6 +37,7 @@
   height: 25px;
   gap: 20px;
   margin: 0 0 0 auto;
+  padding: 0 0 12px;
 }
 
 .header__username {
@@ -51,6 +52,6 @@
 .header__avatar {
   width: 40px;
   height: 40px;
-  margin: 8px 0 8px 12px;
+  margin: 0;
   border: 1px none rgba(0, 0, 0, 0.5);
 }
