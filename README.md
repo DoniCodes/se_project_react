@@ -6,5 +6,5 @@
  
  ## Links
 
- - [Link to project](https://DoniCodes.github.io/se_project_react)
+ - [Link to project](https://donicodes.github.io/se_project_react/)
  - [Figma Design](https://www.figma.com/file/DTojSwldenF9UPKQZd6RRb/Sprint-10%3A-WTWR)
