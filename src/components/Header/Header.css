@@ -31,7 +31,7 @@
 
 .header__user-container {
   display: grid;
-  grid-template-areas: "button name";
+  grid-template-areas: "input button name";
   grid-template-columns: minmax(auto, 25px);
   align-items: center;
   height: 25px;
