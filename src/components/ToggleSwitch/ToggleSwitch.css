@@ -27,7 +27,6 @@
 }
 
 .toggle-switch__text-F {
-  color: #fff;
   position: absolute;
   top: 5px;
   left: 9px;
@@ -43,12 +42,4 @@
 
 .toggle-switch__checkbox:checked ~ .toggle-switch__circle {
   transform: translateX(28px);
-}
-
-.toggle-switch__checkbox:checked ~ .toggle-switch__text-F {
-  color: #808080;
-}
-
-.toggle-switch__checkbox:checked ~ .toggle-switch__text-C {
-  color: #fff;
 }
