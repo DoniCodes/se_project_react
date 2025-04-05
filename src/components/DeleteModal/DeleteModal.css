@@ -1,0 +1,39 @@
+.modal__content_delete {
+  position: absolute;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 280px;
+  width: 670px;
+  border-radius: 8px;
+}
+
+.delete__text {
+  color: #000000;
+  max-width: 80%;
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.delete__confirm-btn {
+  color: #ff4d00;
+  padding-bottom: 24px;
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+  line-height: 1.2;
+  cursor: pointer;
+}
+
+.delete__cancel-btn {
+  color: #000000;
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+  line-height: 1.2;
+  cursor: pointer;
+}

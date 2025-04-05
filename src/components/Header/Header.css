@@ -3,6 +3,7 @@
   align-items: center;
   padding: 32px 0 28px;
   font-family: "CabinetGrotesk-Bold", Arial, sans-serif;
+  position: relative;
 }
 
 .header__logo {
@@ -20,7 +21,7 @@
 }
 
 .header__add-clothes-btn {
-  margin: 8px 0;
+  margin: 0 0 0 20px;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.2;
@@ -30,14 +31,21 @@
 }
 
 .header__user-container {
-  display: grid;
-  grid-template-areas: "button name";
-  grid-template-columns: minmax(auto, 25px);
+  display: flex;
+
   align-items: center;
   height: 25px;
-  gap: 20px;
+  gap: 0;
   margin: 0 0 0 auto;
-  padding: 0 0 12px;
+  padding: 12px 0;
+}
+
+.header__link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
 }
 
 .header__username {
@@ -52,6 +60,9 @@
 .header__avatar {
   width: 40px;
   height: 40px;
+  object-fit: cover;
   margin: 0;
   border: 1px none rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  display: block;
 }

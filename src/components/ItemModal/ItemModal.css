@@ -1,6 +1,9 @@
 .modal__footer {
+  display: flex;
+  flex-direction: column;
   font-weight: 700;
   padding: 0 32px 32px;
+  width: 200px;
 }
 
 .modal__caption {
@@ -11,4 +14,20 @@
 .modal__weather {
   font-size: 20px;
   margin: 12px 0 0;
+}
+
+.modal__delete-btn {
+  display: flex;
+  position: relative;
+  bottom: 91px;
+  background-color: transparent;
+  border: none;
+  border-radius: 8px;
+  color: #ff4d00;
+  cursor: pointer;
+  width: 150px;
+  height: 24px;
+  font-size: 20px;
+  margin: 0 0 0 auto;
+  padding: 0 0 0 0;
 }
