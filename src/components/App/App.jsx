@@ -115,6 +115,7 @@ function App() {
               path="/profile"
               element={
                 <Profile
+                  weatherData={weatherData}
                   onCardClick={handleCardClick}
                   clothingItems={clothingItems}
                   onAddClick={handleAddClick}
