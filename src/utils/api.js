@@ -13,4 +13,23 @@ function getItems() {
     .catch((error) => console.error("Error fetching items:", error));
 }
 
-export { getItems };
+function addItem(item) {
+  return fetch(`${baseUrl}/items`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(item),
+  })
+    .then(_checkResponse)
+    .catch((error) => console.error("Error adding item:", error));
+}
+function deleteItem(id) {
+  return fetch(`${baseUrl}/items/${id}`, {
+    method: "DELETE",
+  })
+    .then(_checkResponse)
+    .catch((error) => console.error("Error deleting item:", error));
+}
+
+export { getItems, addItem, deleteItem };
