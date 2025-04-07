@@ -1,15 +1,10 @@
-const baseUrl = "http://localhost:3001";
+import { checkResponse } from "./weatherApi";
 
-function _checkResponse(res) {
-  if (!res.ok) {
-    Promise.reject(`Error ${res.status}`);
-  }
-  return res.json();
-}
+const baseUrl = "http://localhost:3001";
 
 function getItems() {
   return fetch(`${baseUrl}/items`)
-    .then(_checkResponse)
+    .then(checkResponse)
     .catch((error) => console.error("Error fetching items:", error));
 }
 
@@ -20,16 +15,12 @@ function addItem(item) {
       "Content-Type": "application/json",
     },
     body: JSON.stringify(item),
-  })
-    .then(_checkResponse)
-    .catch((error) => console.error("Error adding item:", error));
+  }).then(checkResponse);
 }
 function deleteItem(id) {
   return fetch(`${baseUrl}/items/${id}`, {
     method: "DELETE",
-  })
-    .then(_checkResponse)
-    .catch((error) => console.error("Error deleting item:", error));
+  }).then(checkResponse);
 }
 
 export { getItems, addItem, deleteItem };

@@ -18,13 +18,15 @@ function AddItemModal({ isOpen, onClose, onAddItemModalSubmit }) {
     setWeather(e.target.value);
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    onAddItemModalSubmit({ name, imageUrl, weather });
-    //empty the inputs
+  useEffect(() => {
     setName("");
     setImageUrl("");
     setWeather("");
+  }, [isOpen]);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    onAddItemModalSubmit({ name, imageUrl, weather });
   };
 
   return (

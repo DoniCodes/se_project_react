@@ -1,4 +1,4 @@
-function _checkResponse(res) {
+export function checkResponse(res) {
   if (!res.ok) {
     Promise.reject(`Error ${res.status}`);
   }
@@ -35,6 +35,6 @@ function getWeatherType(temperature) {
 export const getWeather = async ({ latitude, longitude }, APIkey) => {
   const response = await fetch(
     `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=imperial&appid=${APIkey}`
-  ).then(_checkResponse);
+  ).then(checkResponse);
   return response;
 };
